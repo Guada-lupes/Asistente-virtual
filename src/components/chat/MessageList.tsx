@@ -17,6 +17,13 @@ const MessageList: React.FC<MessageListProps> = ({ messages, isTyping }) => {
   const { isDark } = useTheme();
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
+  // Obtener la fecha actual formateada
+  const currentDate = new Date().toLocaleDateString('es-ES', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long'
+  });
+
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -34,14 +41,14 @@ const MessageList: React.FC<MessageListProps> = ({ messages, isTyping }) => {
       <div className="h-[calc(100vh-340px)] overflow-y-auto px-8 py-8">
         <div className="space-y-6 max-w-4xl mx-auto">
           
-          {/* Separador de fecha */}
+          {/* Separador de fecha - Ahora dinámico */}
           <div className="flex justify-center mb-8">
             <div className={`px-6 py-3 rounded-full text-sm font-medium ${
               isDark 
                 ? 'bg-white/10 text-gray-300' 
                 : 'bg-purple-100 text-purple-700'
             }`}>
-              Hoy, 10:30 AM
+              {currentDate}
             </div>
           </div>
 

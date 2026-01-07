@@ -78,7 +78,7 @@ const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, disabled = false }
         <p className={`text-xs mt-3 text-center ${
           isDark ? 'text-gray-500' : 'text-gray-600'
         }`}>
-          <Zap size={12} className="inline mb-0.5" /> Potenciado por IA · Respuestas instantáneas
+          Creado por Guadalupe Marándola con 💜
         </p>
       </div>
     </div>
