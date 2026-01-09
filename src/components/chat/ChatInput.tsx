@@ -85,7 +85,7 @@ const ChatInput: React.FC<ChatInputProps> = ({
             isDark ? "text-gray-500" : "text-gray-600"
           }`}
         >
-          <Zap size={12} className="inline mb-0.5" /> Creado por Guadalupe
+          Creado por Guadalupe
           Marándola con 💜
         </p>
       </div>
