@@ -4,6 +4,8 @@ Asistente virtual inteligente de soporte técnico construido con React, TypeScri
 
 El asistente utiliza un clasificador híbrido (reglas + LLM) para determinar si las consultas están dentro del dominio de soporte, manteniendo memoria conversacional para respuestas contextualizadas.
 
+> ⚠️ **Nota de seguridad:** Este es un proyecto educativo. En producción, 
+   > la API key debería manejarse en un backend seguro.
 ---
 
 ## ✨ Características
